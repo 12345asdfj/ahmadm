@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="result()">enter</button>
+    <h1 id="output"></h1>
+    <script>
+function result() {
+    let j=[90,80,70,60,50,];
+    let name=["jawad","ahmad","muhammad","umar","usman",];
+    for (let i=0; i<j.length; i++ )
+        if (j[i]>=90)
+        document.getElementById('output').innerHTML+= `${name[0]} ${j[i]} grade A`+"<br>";
+        else if (j[i]>=80 && j[i]<90)
+        document.getElementById('output').innerHTML+= `${name[1]} ${j[i]} grade B`+"<br>";
+        else if (j[i]>=70 && j[i]<80)
+        document.getElementById('output').innerHTML+= `${name[2]} ${j[i]} grade C`+"<br>";
+        else if (j[i]>=60 && j[i]<70)
+        document.getElementById('output').innerHTML+= `${name[3]} ${j[i]} grade D`+"<br>";
+        else 
+        document.getElementById('output').innerHTML+= `${name[4]} ${j[i]} grade E`+"<br>";
+        
+
+    }
+
+
+    </script>
+</body>
+</html>

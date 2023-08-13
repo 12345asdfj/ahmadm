@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="numj()"> on click</button>
+    <h1 id="output4"></h1> 
+    <script>
+
+    function numj() {
+
+    let j =[12,24,19,32,4,8]
+    let mxNumber=''
+    for (let i = 0; i <j.length; i++){
+        
+    if (j[i]>mxNumber){
+    mxNumber=j[i]
+    }
+    }
+    document.getElementById('output4').innerHTML+= mxNumber
+    
+    
+    } 
+    </script>
+</body>
+</html>

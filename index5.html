@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button onclick="numj()"> on click</button>
+<h1>selsius to fahrenheit</h1>
+    <h2 id="output5"></h2> 
+    <script>
+
+    function numj() {
+
+    let jc=[25,35,30,20,18]
+    let jf=[]
+  show=document.getElementById('output5')
+  show.innerHTML=" "
+    for (let i = 0; i <jc.length; i++){
+    jf=(jc[i]*9/5)+32;
+
+
+    show.innerHTML+=`celsius   ${jc[i]}  =  fahrenheit ${jf}` + "<br>"
+    }
+    }
+    
+    
+    
+    
+    </script>  
+</body>
+</html>
